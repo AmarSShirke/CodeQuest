@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoviesListViewController">
+            <connections>
+                <outlet property="activityIndicatorLoader" destination="pgC-gx-qzG" id="AJh-dv-Qjk"/>
+                <outlet property="movieSearchBar" destination="X9V-WD-jgw" id="psw-ah-d6r"/>
+                <outlet property="recentlySearchedView" destination="xVe-mY-NHf" id="9Bb-M3-ddR"/>
+                <outlet property="tblMoviesList" destination="Vf7-gd-b6N" id="3O7-qJ-bDy"/>
+                <outlet property="tblRecentlySearchedList" destination="gLW-N7-fGf" id="85Q-zU-ted"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LA6-gK-JZg">
+                    <rect key="frame" x="0.0" y="44" width="428" height="70"/>
+                    <color key="backgroundColor" red="0.1085845307" green="0.4947016239" blue="0.95489698649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="t9h-VB-LVL"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vf7-gd-b6N">
+                    <rect key="frame" x="0.0" y="170" width="428" height="722"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="R7G-sU-yF0"/>
+                        <outlet property="delegate" destination="-1" id="KZ1-kk-HEN"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" placeholder="Search movie" translatesAutoresizingMaskIntoConstraints="NO" id="X9V-WD-jgw">
+                    <rect key="frame" x="0.0" y="114" width="428" height="56"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="hJe-96-WlX"/>
+                    </connections>
+                </searchBar>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="pgC-gx-qzG">
+                    <rect key="frame" x="189" y="429" width="50" height="68"/>
+                </activityIndicatorView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hungama-logo" translatesAutoresizingMaskIntoConstraints="NO" id="98w-og-KTt">
+                    <rect key="frame" x="64" y="58" width="300" height="42"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVe-mY-NHf">
+                    <rect key="frame" x="0.0" y="170" width="428" height="193"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recently Searched" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZM-4c-Qrn">
+                            <rect key="frame" x="0.0" y="5" width="428" height="20"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gLW-N7-fGf">
+                            <rect key="frame" x="0.0" y="30" width="428" height="163"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Gca-bm-utv"/>
+                                <outlet property="delegate" destination="-1" id="Rmd-a8-vQN"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="pbw-1c-YDo"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xVe-mY-NHf" firstAttribute="top" secondItem="Vf7-gd-b6N" secondAttribute="top" id="12D-0Z-bGN"/>
+                <constraint firstItem="LA6-gK-JZg" firstAttribute="leading" secondItem="Vf7-gd-b6N" secondAttribute="leading" id="2Pg-bg-ONg"/>
+                <constraint firstItem="LA6-gK-JZg" firstAttribute="top" secondItem="pbw-1c-YDo" secondAttribute="top" id="IuB-Zl-rZa"/>
+                <constraint firstItem="pgC-gx-qzG" firstAttribute="leading" secondItem="pbw-1c-YDo" secondAttribute="leading" constant="189" id="KFA-3s-9ft"/>
+                <constraint firstItem="98w-og-KTt" firstAttribute="top" secondItem="pbw-1c-YDo" secondAttribute="top" constant="14" id="Le0-2c-X1o"/>
+                <constraint firstItem="X9V-WD-jgw" firstAttribute="top" secondItem="LA6-gK-JZg" secondAttribute="bottom" id="MQA-qO-bqO"/>
+                <constraint firstItem="LA6-gK-JZg" firstAttribute="trailing" secondItem="Vf7-gd-b6N" secondAttribute="trailing" id="Nlm-F2-Yam"/>
+                <constraint firstItem="LA6-gK-JZg" firstAttribute="trailing" secondItem="xVe-mY-NHf" secondAttribute="trailing" id="Whf-a8-pmI"/>
+                <constraint firstItem="X9V-WD-jgw" firstAttribute="trailing" secondItem="LA6-gK-JZg" secondAttribute="trailing" id="XiF-nR-IEG"/>
+                <constraint firstItem="LA6-gK-JZg" firstAttribute="leading" secondItem="xVe-mY-NHf" secondAttribute="leading" id="e8a-3R-MIl"/>
+                <constraint firstItem="LA6-gK-JZg" firstAttribute="centerX" secondItem="pgC-gx-qzG" secondAttribute="centerX" id="egR-Gg-2o0"/>
+                <constraint firstItem="LA6-gK-JZg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fa6-jC-ONR"/>
+                <constraint firstItem="pgC-gx-qzG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="g17-Rp-ZZN"/>
+                <constraint firstItem="LA6-gK-JZg" firstAttribute="leading" secondItem="pbw-1c-YDo" secondAttribute="leading" id="gGN-0j-XEq"/>
+                <constraint firstItem="X9V-WD-jgw" firstAttribute="leading" secondItem="LA6-gK-JZg" secondAttribute="leading" id="h3e-VE-E6k"/>
+                <constraint firstItem="pbw-1c-YDo" firstAttribute="bottom" secondItem="pgC-gx-qzG" secondAttribute="bottom" constant="395" id="jtD-qt-fXh"/>
+                <constraint firstItem="pgC-gx-qzG" firstAttribute="top" secondItem="xVe-mY-NHf" secondAttribute="bottom" constant="66" id="keq-4g-enx"/>
+                <constraint firstItem="Vf7-gd-b6N" firstAttribute="top" secondItem="X9V-WD-jgw" secondAttribute="bottom" id="pg9-8Y-qqc"/>
+                <constraint firstItem="98w-og-KTt" firstAttribute="centerY" secondItem="LA6-gK-JZg" secondAttribute="centerY" id="sPc-PM-ERl"/>
+                <constraint firstItem="Vf7-gd-b6N" firstAttribute="bottom" secondItem="pbw-1c-YDo" secondAttribute="bottom" id="xeF-Zt-1NA"/>
+                <constraint firstItem="98w-og-KTt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zWQ-nX-Byh"/>
+            </constraints>
+            <point key="canvasLocation" x="139.13043478260872" y="89.0625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hungama-logo" width="300" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

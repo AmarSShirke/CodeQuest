@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		264E0D8925CE57FC00CF1F9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 264E0D8825CE57FC00CF1F9A /* AppDelegate.m */; };
+		264E0D9425CE580000CF1F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264E0D9325CE580000CF1F9A /* Assets.xcassets */; };
+		264E0D9725CE580000CF1F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 264E0D9525CE580000CF1F9A /* LaunchScreen.storyboard */; };
+		264E0D9A25CE580000CF1F9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 264E0D9925CE580000CF1F9A /* main.m */; };
+		264E0DA825CE58C600CF1F9A /* MoviesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 264E0DA625CE58C600CF1F9A /* MoviesListViewController.m */; };
+		264E0DA925CE58C600CF1F9A /* MoviesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264E0DA725CE58C600CF1F9A /* MoviesListViewController.xib */; };
+		264E0DB025CE5D3C00CF1F9A /* MovieInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 264E0DAE25CE5D3C00CF1F9A /* MovieInfoTableViewCell.m */; };
+		264E0DB125CE5D3C00CF1F9A /* MovieInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264E0DAF25CE5D3C00CF1F9A /* MovieInfoTableViewCell.xib */; };
+		264E0DD525CEC72D00CF1F9A /* APIRequestCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 264E0DD425CEC72D00CF1F9A /* APIRequestCall.m */; };
+		264E0DDB25CF116100CF1F9A /* MovieDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 264E0DD925CF116100CF1F9A /* MovieDetailsViewController.m */; };
+		264E0DDC25CF116100CF1F9A /* MovieDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264E0DDA25CF116100CF1F9A /* MovieDetailsViewController.xib */; };
+		264E0DF225CFE62700CF1F9A /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 264E0DF025CFE62700CF1F9A /* CollectionViewCell.m */; };
+		264E0DF325CFE62700CF1F9A /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264E0DF125CFE62700CF1F9A /* CollectionViewCell.xib */; };
+		264E0E0725D07DBC00CF1F9A /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 264E0E0625D07DBC00CF1F9A /* Config.plist */; };
+		264E0E1B25D0FA0900CF1F9A /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 264E0E1A25D0FA0900CF1F9A /* Network.m */; };
+		26D52C0D25D1044F006990BF /* JSONParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D52C0C25D1044F006990BF /* JSONParsing.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		264E0D8425CE57FC00CF1F9A /* CodeQuest_Hungama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeQuest_Hungama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		264E0D8725CE57FC00CF1F9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		264E0D8825CE57FC00CF1F9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		264E0D9325CE580000CF1F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		264E0D9625CE580000CF1F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		264E0D9825CE580000CF1F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		264E0D9925CE580000CF1F9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		264E0DA525CE58C600CF1F9A /* MoviesListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesListViewController.h; sourceTree = "<group>"; };
+		264E0DA625CE58C600CF1F9A /* MoviesListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesListViewController.m; sourceTree = "<group>"; };
+		264E0DA725CE58C600CF1F9A /* MoviesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesListViewController.xib; sourceTree = "<group>"; };
+		264E0DAD25CE5D3C00CF1F9A /* MovieInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieInfoTableViewCell.h; sourceTree = "<group>"; };
+		264E0DAE25CE5D3C00CF1F9A /* MovieInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieInfoTableViewCell.m; sourceTree = "<group>"; };
+		264E0DAF25CE5D3C00CF1F9A /* MovieInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieInfoTableViewCell.xib; sourceTree = "<group>"; };
+		264E0DD325CEC72D00CF1F9A /* APIRequestCall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIRequestCall.h; sourceTree = "<group>"; };
+		264E0DD425CEC72D00CF1F9A /* APIRequestCall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIRequestCall.m; sourceTree = "<group>"; };
+		264E0DD825CF116100CF1F9A /* MovieDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieDetailsViewController.h; sourceTree = "<group>"; };
+		264E0DD925CF116100CF1F9A /* MovieDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieDetailsViewController.m; sourceTree = "<group>"; };
+		264E0DDA25CF116100CF1F9A /* MovieDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailsViewController.xib; sourceTree = "<group>"; };
+		264E0DEF25CFE62700CF1F9A /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		264E0DF025CFE62700CF1F9A /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		264E0DF125CFE62700CF1F9A /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		264E0E0625D07DBC00CF1F9A /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		264E0E1925D0FA0900CF1F9A /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		264E0E1A25D0FA0900CF1F9A /* Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		26D52C0B25D1044F006990BF /* JSONParsing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParsing.h; sourceTree = "<group>"; };
+		26D52C0C25D1044F006990BF /* JSONParsing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONParsing.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		264E0D8125CE57FC00CF1F9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		264E0D7B25CE57FC00CF1F9A = {
+			isa = PBXGroup;
+			children = (
+				264E0D8625CE57FC00CF1F9A /* CodeQuest_Hungama */,
+				264E0D8525CE57FC00CF1F9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		264E0D8525CE57FC00CF1F9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				264E0D8425CE57FC00CF1F9A /* CodeQuest_Hungama.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		264E0D8625CE57FC00CF1F9A /* CodeQuest_Hungama */ = {
+			isa = PBXGroup;
+			children = (
+				264E0D8725CE57FC00CF1F9A /* AppDelegate.h */,
+				264E0D8825CE57FC00CF1F9A /* AppDelegate.m */,
+				264E0DFE25D07D1300CF1F9A /* Controller */,
+				264E0DFD25D07D0300CF1F9A /* View */,
+				264E0DFC25D07CF200CF1F9A /* Model */,
+				264E0E0525D07D8100CF1F9A /* Utility */,
+				264E0D9325CE580000CF1F9A /* Assets.xcassets */,
+				264E0D9525CE580000CF1F9A /* LaunchScreen.storyboard */,
+				264E0D9825CE580000CF1F9A /* Info.plist */,
+				264E0D9925CE580000CF1F9A /* main.m */,
+			);
+			path = CodeQuest_Hungama;
+			sourceTree = "<group>";
+		};
+		264E0DFC25D07CF200CF1F9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				264E0DD325CEC72D00CF1F9A /* APIRequestCall.h */,
+				264E0DD425CEC72D00CF1F9A /* APIRequestCall.m */,
+				26D52C0B25D1044F006990BF /* JSONParsing.h */,
+				26D52C0C25D1044F006990BF /* JSONParsing.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		264E0DFD25D07D0300CF1F9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				264E0DA725CE58C600CF1F9A /* MoviesListViewController.xib */,
+				264E0DDA25CF116100CF1F9A /* MovieDetailsViewController.xib */,
+				264E0E0125D07D3B00CF1F9A /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		264E0DFE25D07D1300CF1F9A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				264E0DA525CE58C600CF1F9A /* MoviesListViewController.h */,
+				264E0DA625CE58C600CF1F9A /* MoviesListViewController.m */,
+				264E0DD825CF116100CF1F9A /* MovieDetailsViewController.h */,
+				264E0DD925CF116100CF1F9A /* MovieDetailsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		264E0E0125D07D3B00CF1F9A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				264E0DAD25CE5D3C00CF1F9A /* MovieInfoTableViewCell.h */,
+				264E0DAE25CE5D3C00CF1F9A /* MovieInfoTableViewCell.m */,
+				264E0DAF25CE5D3C00CF1F9A /* MovieInfoTableViewCell.xib */,
+				264E0DEF25CFE62700CF1F9A /* CollectionViewCell.h */,
+				264E0DF025CFE62700CF1F9A /* CollectionViewCell.m */,
+				264E0DF125CFE62700CF1F9A /* CollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		264E0E0525D07D8100CF1F9A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				264E0E1925D0FA0900CF1F9A /* Network.h */,
+				264E0E1A25D0FA0900CF1F9A /* Network.m */,
+				264E0E0625D07DBC00CF1F9A /* Config.plist */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		264E0D8325CE57FC00CF1F9A /* CodeQuest_Hungama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 264E0D9D25CE580000CF1F9A /* Build configuration list for PBXNativeTarget "CodeQuest_Hungama" */;
+			buildPhases = (
+				264E0D8025CE57FC00CF1F9A /* Sources */,
+				264E0D8125CE57FC00CF1F9A /* Frameworks */,
+				264E0D8225CE57FC00CF1F9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeQuest_Hungama;
+			productName = CodeQuest_Hungama;
+			productReference = 264E0D8425CE57FC00CF1F9A /* CodeQuest_Hungama.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		264E0D7C25CE57FC00CF1F9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					264E0D8325CE57FC00CF1F9A = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 264E0D7F25CE57FC00CF1F9A /* Build configuration list for PBXProject "CodeQuest_Hungama" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 264E0D7B25CE57FC00CF1F9A;
+			productRefGroup = 264E0D8525CE57FC00CF1F9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				264E0D8325CE57FC00CF1F9A /* CodeQuest_Hungama */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		264E0D8225CE57FC00CF1F9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264E0D9725CE580000CF1F9A /* LaunchScreen.storyboard in Resources */,
+				264E0D9425CE580000CF1F9A /* Assets.xcassets in Resources */,
+				264E0DF325CFE62700CF1F9A /* CollectionViewCell.xib in Resources */,
+				264E0DB125CE5D3C00CF1F9A /* MovieInfoTableViewCell.xib in Resources */,
+				264E0DA925CE58C600CF1F9A /* MoviesListViewController.xib in Resources */,
+				264E0DDC25CF116100CF1F9A /* MovieDetailsViewController.xib in Resources */,
+				264E0E0725D07DBC00CF1F9A /* Config.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		264E0D8025CE57FC00CF1F9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264E0DD525CEC72D00CF1F9A /* APIRequestCall.m in Sources */,
+				264E0D8925CE57FC00CF1F9A /* AppDelegate.m in Sources */,
+				264E0D9A25CE580000CF1F9A /* main.m in Sources */,
+				264E0DB025CE5D3C00CF1F9A /* MovieInfoTableViewCell.m in Sources */,
+				264E0DDB25CF116100CF1F9A /* MovieDetailsViewController.m in Sources */,
+				264E0DF225CFE62700CF1F9A /* CollectionViewCell.m in Sources */,
+				264E0E1B25D0FA0900CF1F9A /* Network.m in Sources */,
+				26D52C0D25D1044F006990BF /* JSONParsing.m in Sources */,
+				264E0DA825CE58C600CF1F9A /* MoviesListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		264E0D9525CE580000CF1F9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				264E0D9625CE580000CF1F9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		264E0D9B25CE580000CF1F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		264E0D9C25CE580000CF1F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		264E0D9E25CE580000CF1F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5UZ85VNYD;
+				INFOPLIST_FILE = CodeQuest_Hungama/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hungama.CodeQuest-Hungama";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		264E0D9F25CE580000CF1F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5UZ85VNYD;
+				INFOPLIST_FILE = CodeQuest_Hungama/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hungama.CodeQuest-Hungama";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		264E0D7F25CE57FC00CF1F9A /* Build configuration list for PBXProject "CodeQuest_Hungama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264E0D9B25CE580000CF1F9A /* Debug */,
+				264E0D9C25CE580000CF1F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		264E0D9D25CE580000CF1F9A /* Build configuration list for PBXNativeTarget "CodeQuest_Hungama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264E0D9E25CE580000CF1F9A /* Debug */,
+				264E0D9F25CE580000CF1F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 264E0D7C25CE57FC00CF1F9A /* Project object */;
+}

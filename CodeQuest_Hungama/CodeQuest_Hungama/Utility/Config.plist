@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseURL</key>
+	<string>https://api.themoviedb.org/</string>
+	<key>ImageURL</key>
+	<string>https://image.tmdb.org/t/p/original/</string>
+	<key>SubURL</key>
+	<string>3/movie/</string>
+	<key>movieListAPI</key>
+	<string>now_playing?</string>
+	<key>APIKey</key>
+	<string>api_key=8d5756a13650a18c415811718790e383</string>
+	<key>language</key>
+	<string>en-US</string>
+	<key>CastAPI</key>
+	<string>credits?</string>
+	<key>SimilarMovieAPI</key>
+	<string>similar?</string>
+</dict>
+</plist>
